@@ -1,26 +1,30 @@
 # monthly-calendar-js
 This is a JavaScript function that returns a tagged html monthly calendar element.
 
-<img src='screenshot.png'>
-```
-//Input:
-//  full year: number like 2023 for example
-//  month0Indexed: a number 0 is January, 11 is December
-//  tableIDPrefix: a string to help tag the elements of the returned html string which is built by the function
-//Output:
-//  a string containing html formatted table with indexed elements
-//  the table's id will be the tableIDPrefix year and month example mytable-2023-01
-//  the tables caption would be mytable-2023-01-caption
-//  the tables elements will be mytable-2023-12-31 for example
-//  
-//  example:
-//  let thisMonthsCalendar = makeMonthlyCalendar(2023,3,"mytable");//April 2023
-//
-//  This will return an unformatted version of the html element below
-//  Notice that the format of the dates in the html table are similar to the html input format
-//  ie Jan 31, 2003 would be 2003-01-31 
-//
-/*
+![alt text](screenshot.png "Title");
+
+
+Input:
+
+  * full year: number like 2023 for example
+  * month0Indexed: a number 0 is January, 11 is December
+  * tableIDPrefix: a string to help tag the elements of the returned html string which is built by the function
+
+Output:
+  * a string containing html formatted table with indexed elements
+  * the table's id will be the tableIDPrefix year and month example mytable-2023-01
+  * the tables caption would be mytable-2023-01-caption
+  * the tables elements will be mytable-2023-12-31 for example
+  
+  example:
+  let thisMonthsCalendar = makeMonthlyCalendar(2023,3,"mytable"); for April 2023
+
+  This will return an unformatted version of the html element below
+  
+  Notice that the format of the dates in the html table are similar to the html `<input type="date">` format
+  ie Jan 31, 2003 would be `2003-01-31`. 
+
+```  
 <table id="mytable-2023-04">
     <caption id="mytable-2023-04-caption">April 2023</caption>
     <tr>
