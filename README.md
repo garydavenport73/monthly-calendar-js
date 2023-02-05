@@ -17,12 +17,14 @@ Output:
   * the tables elements will be mytable-2023-12-31 for example
   
   example:
-  let thisMonthsCalendar = makeMonthlyCalendar(2023,3,"mytable"); for April 2023
+  `let thisMonthsCalendar = makeMonthlyCalendar(2023,3,"mytable");` for April 2023
 
   This will return an unformatted version of the html element below
   
   Notice that the format of the dates in the html table are similar to the html `<input type="date">` format
   ie Jan 31, 2003 would be `2003-01-31`. 
+  
+  In other words, the input is 0 indexed numbers like JavaScript usually uses, but the html formatting is similar to html elements 1 indexed and strings.
 
 ```  
 <table id="mytable-2023-04">
